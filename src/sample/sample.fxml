@@ -2,7 +2,6 @@
 
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
@@ -18,38 +17,14 @@
    <children>
       <Pane prefHeight="768.0" prefWidth="1024.0">
          <children>
-            <TabPane layoutY="100.0" prefHeight="200.0" prefWidth="1024.0" tabClosingPolicy="UNAVAILABLE">
+            <TabPane layoutY="100.0" prefHeight="668.0" prefWidth="1024.0" tabClosingPolicy="UNAVAILABLE">
               <tabs>
-                <Tab text="Dashboard">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                  </content>
-                </Tab>
-                <Tab text="Customers">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                  </content>
-                </Tab>
-                  <Tab text="Items List">
-                    <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                    </content>
-                  </Tab>
-                  <Tab text="Invoices">
-                    <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                    </content>
-                  </Tab>
-                  <Tab text="Payments Received">
-                    <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                    </content>
-                  </Tab>
-                  <Tab text="Expenses">
-                    <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                    </content>
-                  </Tab>
+                <Tab text="Dashboard" />
+                <Tab text="Customers" />
+                  <Tab text="Items List" />
+                  <Tab text="Invoices" />
+                  <Tab text="Payments Received" />
+                  <Tab text="Expenses" />
               </tabs>
             </TabPane>
          </children>
