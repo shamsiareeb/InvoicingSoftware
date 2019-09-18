@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
@@ -22,14 +22,14 @@
    <children>
       <Pane prefHeight="768.0" prefWidth="1024.0" GridPane.columnIndex="1">
          <children>
-            <TabPane layoutY="100.0" prefHeight="668.0" prefWidth="1024.0" tabClosingPolicy="UNAVAILABLE">
+            <TabPane fx:id="tabPane" layoutY="100.0" prefHeight="668.0" prefWidth="1024.0" tabClosingPolicy="UNAVAILABLE">
               <tabs>
-                <Tab text="Dashboard">
+                <Tab fx:id="tabbuttonDashboard" text="Dashboard">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                   </content>
                 </Tab>
-                <Tab text="Customers">
+                <Tab fx:id="tabbuttonCustomers" text="Customers">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
@@ -44,26 +44,26 @@
                                     <TableColumn prefWidth="150.0" text="Unused Credits" />
                                 </columns>
                               </TableView>
-                              <Button layoutX="913.0" layoutY="22.0" mnemonicParsing="false" text="New Customer" />
+                              <Button layoutX="899.0" layoutY="21.0" mnemonicParsing="false" text="New Customer" />
                            </children></AnchorPane>
                   </content>
                 </Tab>
-                  <Tab text="Items List">
+                  <Tab fx:id="tabbuttonItems" text="Items List">
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                     </content>
                   </Tab>
-                  <Tab text="Invoices">
+                  <Tab fx:id="tabbuttonInvoices" text="Invoices">
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                     </content>
                   </Tab>
-                  <Tab text="Payments Received">
+                  <Tab fx:id="tabbuttonPayments" text="Payments Received">
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                     </content>
                   </Tab>
-                  <Tab text="Expenses">
+                  <Tab fx:id="tabbuttonExpenses" text="Expenses">
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                     </content>
