@@ -94,7 +94,7 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Button fx:id="buttonNewInvoice" layoutX="927.0" layoutY="17.0" mnemonicParsing="false" text="New Invoice" />
+                              <Button fx:id="buttonNewItem" layoutX="927.0" layoutY="17.0" mnemonicParsing="false" text="New Invoice" />
                            </children></AnchorPane>
                     </content>
                   </Tab>
@@ -110,11 +110,6 @@
                   </Tab>
               </tabs>
             </TabPane>
-            <Label layoutX="14.0" layoutY="28.0" text="ModiSoft">
-               <font>
-                  <Font name="Azo Sans W01 Bold Italic" size="40.0" />
-               </font>
-            </Label>
          </children>
       </Pane>
    </children>
