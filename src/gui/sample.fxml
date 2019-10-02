@@ -38,8 +38,8 @@
                               <TableView fx:id="tableCustomers" layoutX="14.0" layoutY="64.0" prefHeight="560.0" prefWidth="994.0">
                                 <columns>
                                   <TableColumn prefWidth="175.0" text="Name" />
-                                    <TableColumn minWidth="0.0" prefWidth="195.0" text="Company Name" />
-                                    <TableColumn minWidth="0.0" prefWidth="160.0" text="Email" />
+                                    <TableColumn prefWidth="195.0" text="Company Name" />
+                                    <TableColumn prefWidth="160.0" text="Email" />
                                     <TableColumn prefWidth="193.0" text="Work Phone" />
                                     <TableColumn prefWidth="135.0" text="Receivables" />
                                     <TableColumn prefWidth="135.0" text="Unused Credits" />
@@ -61,8 +61,8 @@
                               <TableView fx:id="tableItems" layoutX="14.0" layoutY="64.0" prefHeight="560.0" prefWidth="994.0">
                                  <columns>
                                     <TableColumn prefWidth="324.0" text="Name" />
-                                    <TableColumn minWidth="0.0" prefWidth="397.0" text="Description" />
-                                    <TableColumn minWidth="0.0" prefWidth="272.0" text="Price" />
+                                    <TableColumn prefWidth="397.0" text="Description" />
+                                    <TableColumn prefWidth="272.0" text="Price" />
                                  </columns>
                               </TableView>
                               <Label layoutX="14.0" layoutY="17.0" text="Items List">
@@ -81,8 +81,8 @@
                               <TableView fx:id="tableInvoices" layoutX="14.0" layoutY="64.0" prefHeight="560.0" prefWidth="994.0">
                                  <columns>
                                     <TableColumn prefWidth="100.0" text="Date" />
-                                    <TableColumn minWidth="0.0" prefWidth="125.0" text="Invoice No." />
-                                    <TableColumn minWidth="0.0" prefWidth="225.0" text="Customer Name" />
+                                    <TableColumn prefWidth="125.0" text="Invoice No." />
+                                    <TableColumn prefWidth="225.0" text="Customer Name" />
                                     <TableColumn prefWidth="100.0" text="Status" />
                                     <TableColumn prefWidth="100.0" text="Due Date" />
                                     <TableColumn prefWidth="200.0" text="Amount" />
@@ -100,12 +100,48 @@
                   </Tab>
                   <Tab text="Payments Received">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tableInvoices" layoutX="14.0" layoutY="64.0" prefHeight="560.0" prefWidth="994.0">
+                                 <columns>
+                                    <TableColumn prefWidth="75.0" text="Date" />
+                                    <TableColumn prefWidth="102.0" text="Payment No." />
+                                    <TableColumn prefWidth="150.0" text="Reference No." />
+                                    <TableColumn prefWidth="288.0" text="Customer Name" />
+                                    <TableColumn prefWidth="119.0" text="Mode" />
+                                    <TableColumn prefWidth="129.0" text="Amount" />
+                                    <TableColumn prefWidth="129.0" text="Unused Amount" />
+                                 </columns>
+                              </TableView>
+                              <Label layoutX="14.0" layoutY="17.0" text="Payments">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="buttonNewInvoice" layoutX="918.0" layoutY="17.0" mnemonicParsing="false" text="New Payment" />
+                           </children></AnchorPane>
                     </content>
                   </Tab>
-                  <Tab text="Expenses">
+                  <Tab text="Estimates">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tableInvoices" layoutX="14.0" layoutY="64.0" prefHeight="560.0" prefWidth="994.0">
+                                 <columns>
+                                    <TableColumn prefWidth="100.0" text="Date" />
+                                    <TableColumn prefWidth="206.0" text="Estimate No." />
+                                    <TableColumn prefWidth="365.0" text="Customer Name" />
+                                    <TableColumn prefWidth="126.0" text="Status" />
+                                    <TableColumn prefWidth="196.0" text="Amount" />
+                                 </columns>
+                              </TableView>
+                              <Label layoutX="14.0" layoutY="17.0" text="Estimates">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="buttonNewInvoice" layoutX="920.0" layoutY="17.0" mnemonicParsing="false" text="New Estimate" AnchorPane.leftAnchor="920.0" AnchorPane.rightAnchor="15.0" />
+                           </children></AnchorPane>
                     </content>
                   </Tab>
               </tabs>
