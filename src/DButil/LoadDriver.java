@@ -8,7 +8,7 @@ public class LoadDriver {
     public static Connection createConnection(){
         try{
             Class.forName("com.mysql.cj.jdbc.Driver").getConstructor().newInstance();
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","root");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db'","root","root");
         }
         catch(Exception e) {
             System.out.println(e);
