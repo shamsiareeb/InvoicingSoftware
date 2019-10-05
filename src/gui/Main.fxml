@@ -141,7 +141,7 @@
                                  </font>
                               </Label>
                               <Button fx:id="buttonNewEstimate" layoutX="920.0" layoutY="17.0" mnemonicParsing="false" text="New Estimate" AnchorPane.leftAnchor="920.0" AnchorPane.rightAnchor="15.0" />
-                           </children></AnchorPane>
+                           </children> </AnchorPane>
                     </content>
                   </Tab>
               </tabs>
