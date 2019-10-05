@@ -45,7 +45,7 @@
                                     <TableColumn prefWidth="135.0" text="Unused Credits" />
                                 </columns>
                               </TableView>
-                              <Button fx:id="buttonNewCustomer" layoutX="913.0" layoutY="22.0" mnemonicParsing="false" text="New Customer" />
+                              <Button fx:id="buttonNewCustomer" layoutX="913.0" layoutY="22.0" mnemonicParsing="false" text="New Customer" onAction="#newCustomer"/>
                               <Label layoutX="14.0" layoutY="17.0" text="Customers">
                                  <font>
                                     <Font size="24.0" />
@@ -70,7 +70,7 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Button fx:id="buttonNewItem" layoutX="940.0" layoutY="22.0" mnemonicParsing="false" text="New Item" />
+                              <Button fx:id="buttonNewItem" layoutX="940.0" layoutY="22.0" mnemonicParsing="false" text="New Item" onAction="#newItem"/>
                            </children></AnchorPane>
                     </content>
                   </Tab>
@@ -94,7 +94,7 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Button fx:id="buttonNewInvoice" layoutX="927.0" layoutY="17.0" mnemonicParsing="false" text="New Invoice" />
+                              <Button fx:id="buttonNewInvoice" layoutX="927.0" layoutY="17.0" mnemonicParsing="false" text="New Invoice" onAction="#newInvoice"/>
                            </children></AnchorPane>
                     </content>
                   </Tab>
@@ -118,7 +118,7 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Button fx:id="buttonNewPayment" layoutX="918.0" layoutY="17.0" mnemonicParsing="false" text="New Payment" />
+                              <Button fx:id="buttonNewPayment" layoutX="918.0" layoutY="17.0" mnemonicParsing="false" text="New Payment" onAction="#newPayment"/>
                            </children></AnchorPane>
                     </content>
                   </Tab>
@@ -140,7 +140,7 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Button fx:id="buttonNewEstimate" layoutX="920.0" layoutY="17.0" mnemonicParsing="false" text="New Estimate" AnchorPane.leftAnchor="920.0" AnchorPane.rightAnchor="15.0" />
+                              <Button fx:id="buttonNewEstimate" layoutX="920.0" layoutY="17.0" mnemonicParsing="false" text="New Estimate" AnchorPane.leftAnchor="920.0" AnchorPane.rightAnchor="15.0" onAction="#newEstimate"/>
                            </children> </AnchorPane>
                     </content>
                   </Tab>
