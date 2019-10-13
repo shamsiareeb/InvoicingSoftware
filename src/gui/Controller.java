@@ -13,7 +13,7 @@ import java.io.IOException;
 public class Controller {
     @FXML protected void newCustomer(ActionEvent Event) throws IOException{
     Stage stage = new Stage();
-    Parent root = FXMLLoader.load(getClass().getResource("popupNewCustomer.fxml"));
+    Parent root = FXMLLoader.load(getClass().getResource("../resources/PopupNewCustomer.fxml"));
     Scene scene = new Scene(root, 300, 275);
     stage.setScene(scene);
     Popup popup = new Popup();
